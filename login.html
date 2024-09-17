@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="byan.jpg" width="20%">
+        <form action="" style="text-align: center; margin-top: 200px;">
+            <div class="input">
+                <h1>LOGIN</h1>
+                <input type="text" placeholder="Username" id="username" class="dalam">
+                <input type="password" placeholder="Password" id="password" class="dalam"/>
+                <input type="text" placeholder="NIS" id="nis" class="dalam">
+                <input type="button" value="Login" id="tombol" class="btn"/>
+            </div>
+        </form>
+        </div>
+
+        <script>
+            const bnTombol = document.querySelector("#tombol");
+            const txtUsername = document.querySelector("#username");
+            const txtPassword = document.querySelector("#password");
+            const txtNis = document.querySelector("#nis");
+
+            bnTombol.addEventListener("click", function () {
+                if (txtUsername.value == "byanhasyif" && txtPassword.value == "byansuhu" && txtNis.value == "541231038") {
+                    window.location = "index.html";
+                }else {
+                alert("Username, password atau NIS anda salah, silakan dicek kembali")
+                }
+            });
+        </script>
+    </body>
+</html>
